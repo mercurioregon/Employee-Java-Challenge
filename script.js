@@ -21,7 +21,12 @@ const collectEmployeesfirst = function() {
   }
   collectEmployeesSalary()
 
-  console.log("collectEmployeesfirst,collectEmployeeslast,collectEmployeesSalary");
+ console.log(collectEmployeesfirst());
+ console.log(collectEmployeeslast());
+ console.log(collectEmployeesSalary())
+ 
+
+
   
 // // Collect employee data
 // const collectEmployees = function() {
