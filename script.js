@@ -5,25 +5,27 @@ const collectEmployeesfirst = function() {
     window.prompt("Enter employee first name.");
   return;
   }
-  collectEmployeesfirst()
-  
+  // collectEmployeesfirst()
+  console.log(collectEmployeesfirst());
+
   const collectEmployeeslast = function() {
     window.prompt("Enter employee last name.");
   return;
   }
-  collectEmployeeslast()
-  
+  // collectEmployeeslast()
+  console.log(collectEmployeeslast());
+
   const collectEmployeesSalary= function() {
     window.prompt("Enter the employee's salary.")
-  if (isNaN(collectEmployeesSalary))
-    window.prompt("Please enter a number.");
-  return;
-  }
-  collectEmployeesSalary()
 
- console.log(collectEmployeesfirst());
- console.log(collectEmployeeslast());
- console.log(collectEmployeesSalary())
+  if (isNaN(collectEmployeesSalary))
+      return ("Please enter a number.");
+  // collectEmployeesSalary()
+
+  console.log(collectEmployeesSalary())
+  return;
+  };
+
  
 
 
