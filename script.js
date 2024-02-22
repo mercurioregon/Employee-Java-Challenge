@@ -1,32 +1,51 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
-const collectEmployeesfirst = function() {
-    window.prompt("Enter employee first name.");
+const collectEmployees = function() {
+  let employeeList = []
+
+   let firstName= window.prompt("Enter employee first name.");
+
+    let lastName= window.prompt("Enter employee last name");
+
+    let salary= window.prompt("Enter employee salary");
+
+
+const employee = {
+
+  firstname: firstName,
+  lastname: lastName,
+  salary: salary,
+
+}
+employeeList.push(employee)
+console.log (employeeList)
+continueprompt= window.confirm("Add another employee?")
+
   return;
-  }
-  // collectEmployeesfirst()
-  console.log(collectEmployeesfirst());
+}
+  // // collectEmployeesfirst()
+  // console.log(collectEmployeesfirst());
 
-  const collectEmployeeslast = function() {
-    window.prompt("Enter employee last name.");
-  return;
-  }
-  // collectEmployeeslast()
-  console.log(collectEmployeeslast());
+  // const collectEmployees = function() {
+  //   window.prompt("Enter employee last name.");
+  // return;
+  // }
+  // // collectEmployeeslast()
+  // console.log(collectEmployeeslast());
 
-  const collectEmployeesSalary= function() {
-    window.prompt("Enter the employee's salary.")
+  // const collectEmployeesSalary= function() {
+  //   window.prompt("Enter the employee's salary.")
 
-  if (isNaN(collectEmployeesSalary))
-      return ("Please enter a number.");
-  // collectEmployeesSalary()
+  // if (isNaN(collectEmployeesSalary))
+  //     return ("Please enter a number.");
+  // // collectEmployeesSalary()
 
-  console.log(collectEmployeesSalary())
-  return;
-  };
+  // console.log(collectEmployeesSalary())
+  // return;
+  // };
 
- 
+
 
 
   
